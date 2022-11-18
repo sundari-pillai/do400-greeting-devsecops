@@ -28,7 +28,8 @@ pipeline {
                 '''
             }
         }
-        post {
+    }
+    post {
             failure {
                 withCredentials([usernamePassword(
                     credentialsId: 'github-global',
